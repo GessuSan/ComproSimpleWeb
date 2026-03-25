@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Experience - PT NUSATEL ARINDO GUTARA</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.toggle-btn{
+margin-right:10px;
+}
+
+.split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:30px;
+}
+
+.box{
+background:#fff;
+padding:25px;
+border-radius:10px;
+border:1px solid #eee;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+
+.progress{
+background:#eee;
+border-radius:20px;
+overflow:hidden;
+margin-top:8px;
+}
+
+.fill{
+background:#0b1f4b;
+color:#fff;
+font-size:12px;
+padding:4px 8px;
+text-align:right;
+border-radius:20px;
+}
+
+.box h4{
+margin-top:15px;
+margin-bottom:5px;
+}
+
+.box ul{
+padding-left:18px;
+margin-bottom:10px;
+}
+
+.history-item{
+margin-top:20px;
+}
+
+.desc{
+margin-top:10px;
+font-size:14px;
+color:#666;
+}
+
+@media(max-width:768px){
+.split{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container header-container">
+
+<a href="index.html" class="logo">
+<img src="Assets/logo.png" alt="Logo">
+</a>
+
+<nav>
+<ul class="nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="experience.html" class="active">Experience</a></li>
+<li><a href="ongoing.html">Ongoing</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+
+<section class="section">
+<div class="container">
+
+<h1>Project Experience</h1>
+<p>Overview of active and completed projects</p>
+
+<div style="margin-top:20px;">
+<button class="btn toggle-btn" onclick="show('active')">Active Project</button>
+<button class="btn btn-outline" onclick="show('history')">Project History</button>
+</div>
+
+
+<div id="active" class="split">
+
+<div class="box">
+<h3>Active Projects</h3>
+
+<h4>DEBHUB (BASARNAS)</h4>
+<ul>
+<li>Radar Terminal ATLUT</li>
+</ul>
+<div class="progress"><div class="fill" style="width:65%">65%</div></div>
+
+<h4>PT PASIFIK SATELIT NUSANTARA</h4>
+<ul>
+<li>Spectrum Analyzer</li>
+<li>ODU Agilis</li>
+<li>LO, SSPA</li>
+</ul>
+<div class="progress"><div class="fill" style="width:80%">80%</div></div>
+
+<h4>PT BANK MUAMALAT</h4>
+<ul>
+<li>Router Cisco</li>
+</ul>
+<div class="progress"><div class="fill" style="width:40%">40%</div></div>
+
+<h4>PT MOBILE SELULER</h4>
+<ul>
+<li>Transceiver Nokia Harris</li>
+<li>Alcatel</li>
+<li>Rectifier</li>
+<li>Huawei</li>
+</ul>
+<div class="progress"><div class="fill" style="width:75%">75%</div></div>
+
+</div>
+
+
+<div class="box">
+
+<h4>PT SANATEL</h4>
+<ul>
+<li>CP2, Exiter, RBS</li>
+<li>Comtech, Cisco, BUC</li>
+</ul>
+<div class="progress"><div class="fill" style="width:55%">55%</div></div>
+
+<h4>PT MASPEC</h4>
+<ul>
+<li>Radar, Furuno, JRC</li>
+<li>Marine navigation</li>
+</ul>
+<div class="progress"><div class="fill" style="width:60%">60%</div></div>
+
+<h4>PT JAYA MAKMUR</h4>
+<ul>
+<li>Explosive Detector</li>
+<li>Gas Analyzer</li>
+<li>Spectro Foto meter</li>
+</ul>
+<div class="progress"><div class="fill" style="width:50%">50%</div></div>
+
+<h4>PT IFORTE SOLUSI INFOTEK</h4>
+<ul>
+<li>RFT Codan, C-Band BUC</li>
+<li>ACT 2400 & 9400</li>
+</ul>
+<div class="progress"><div class="fill" style="width:70%">70%</div></div>
+
+</div>
+
+</div>
+
+
+<div id="history" style="display:none; margin-top:30px;">
+
+<h3>Project History</h3>
+
+<div class="history-item">
+
+<h4>
+BALITBANG KEMHAN
+<button class="detail-btn" onclick="toggleProject('btk')">See Details</button>
+</h4>
+
+<div id="btk" class="project-detail">
+
+<p>
+F S L-Band Satelit<br>
+Kemadirian Satelit Pertahanan RI<br>
+Pengadaan Pengintegrasian System Pengendali Rudder/FIN Pada Roket Kaliber 122 mm<br>
+Desain dan Analisa Rancang Bangun Software Infra Red
+</p>
+
+<div class="image-grid">
+<img src="Assets/BTK(1).jpeg" alt="Project Image 1">
+<img src="Assets/BTK(2).jpeg" alt="Project Image 2">
+</div>
+
+<p class="desc">(Description Progress)</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<footer>
+
+<div class="container footer">
+
+<div>
+<h3>PT NUSATEL ARINDO GUTARA</h3>
+<p>
+Jl. Utan Kayu Raya No. 106 Utan Kayu<br>
+Utara Matraman Jakarta Timur 13120
+</p>
+</div>
+
+<div>
+<p>Phone: +62-85902921</p>
+<p>Email: bmw11@nusagutara.com</p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 PT Nusatel Arindo Gutara
+</p>
+
+</footer>
+
+
+<script>
+function show(tab){
+document.getElementById('active').style.display = (tab==='active')?'grid':'none';
+document.getElementById('history').style.display = (tab==='history')?'block':'none';
+}
+
+function toggleProject(id){
+const el = document.getElementById(id);
+el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+
+</body>
+</html>
